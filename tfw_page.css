@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    width:100%;
+    
+}
+
+nav div{
+    background-color: blueviolet;
+    height:50px;
+}
+
+body section{
+    margin:auto;
+}
+
+.article-images{
+    display:grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    gap:10px;
+    justify-items: center;
+    width:75%;
+
+}
+
+.article-images div{
+    background-color: brown;
+    width:100%;
+    height:150px;
+}
+
+.article-images div:last-child{
+   grid-column: 2 / -1;
+   height:225px;
+   margin-top:-75px;
+}
+
+.article-images div:first-child{
+    height:225px;
+ }
+
