@@ -65,12 +65,6 @@ body section{
    
  }
 
- @media screen and (max-width:1000px)
- {
-    .stories{
-        max-width: 100%;
-    }
- }
 
  .stories div{
     display:flex;
@@ -93,3 +87,77 @@ body section{
   
 
  }
+
+ .channels{
+background: rgba(128, 128, 128, 0.199);
+padding:5% 0;
+ }
+
+.channels h2{
+margin-left:17%;
+margin-bottom:3%;
+}
+
+ .channel-links{
+    display:flex;
+    justify-content: center;
+ }
+
+ .channel-links div{
+    background-color: cadetblue;
+    width:200px;
+    height:150px;
+    margin:0 15px;
+}
+
+
+.newsletter{
+    background-color: darkorchid;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.newsletter form{
+    min-width:30%;
+}
+
+.newsletter .email-input{
+    min-width:80%
+}
+
+.newsletter li{
+    display:inline-block;
+}
+
+
+footer{
+    padding-top:20px;
+    margin-top:100px;
+    background-color: black;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+
+    color:white;
+}
+footer a{
+    color:darkturquoise;
+}
+
+
+
+@media screen and (max-width:1024px)
+ {
+    .stories{
+        max-width: 100%;
+    }
+    .article-images{
+        width:99%;
+    }
+    .newsletter form{
+        min-width:50%;
+    }
+ }
+
