@@ -56,18 +56,33 @@ body section{
 
 }
 
+.article-images a{
+    color:cornsilk;
+}
+
 .article-images article{
     background-color: brown;
     width:100%;
     height:200px;
     background-image: url('https://cdn.mos.cms.futurecdn.net/Gj4BpxWHmrcvZmjaW9nmwf.jpg');
     background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+
+}
+
+.article-images .galaxy1{
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/andromeda-galaxy-royalty-free-image-1585682435.jpg");
+    align-items:center;
+    flex-direction: column;
 }
 
 .article-images p{
     
     text-align: center;
-    margin:0;
+    margin:10px 10px;
+  
 }
 
 .article-images article:last-child{
@@ -253,6 +268,10 @@ footer .copyright{
   
 }
 
+.social li{
+    display: inline-block;
+}
+
 
 
 @media screen and (max-width:1024px)
@@ -262,6 +281,7 @@ footer .copyright{
     }
     .article-images{
         width:99%;
+        font-size: 40px;
     }
 
     .article-links div{
@@ -310,22 +330,33 @@ footer .copyright{
     }
 
     footer p, h3, a{
-        font-size:40px;
+        font-size:50px;
     }
 
     .footer-grid{
         align-items:unset;
         justify-items: unset;
         width:unset;
+        grid-template-columns: repeat(2, 1fr);
       max-height:900px;
+      margin-left:25px;
     }
-
+    footer ul{
+        grid-row-start: 2;
+    }
+    footer div{
+        grid-column: 1 / -1;
+        text-align: left;
+        font-size: 70px;
+    }
     .footer-grid > *{
         padding:0 10px;
     }
 
     footer .copyright{
         border-top:2px solid white;
+        margin-top:55%;
+       
     }
 
  }
